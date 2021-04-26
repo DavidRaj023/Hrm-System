@@ -34,11 +34,13 @@ public class EmployeeDao {
                generatedKey = rs.getInt(1);
                return generatedKey;
             } else {
-                throw new HrException(ResourceService.getInstance().getMessage("HR-00006", employee.getFirstName()));
+                //throw new HrException(ResourceService.getInstance().getMessage("HR-00006", employee.getFirstName()));
+                throw new HrException("no empid");
             }
             
         } catch (Throwable th) {
-            throw new HrException(ResourceService.getInstance().getMessage("HR-00001", employee.getFirstName()), th);
+            //throw new HrException(ResourceService.getInstance().getMessage("HR-00001", employee.getFirstName()), th);
+            throw new HrException("can't create", th);
         } finally {
             DatabaseService.getInstance().closeResources(rs, pstmt, conn);
         }
