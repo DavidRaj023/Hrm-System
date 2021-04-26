@@ -27,7 +27,6 @@ public class Employee {
     private byte[] resume;
     private byte[] photo;
     private EmployeeStatus employeeStatus;
-	private String homeNumber;
 
     
     public int getEmpId() {
