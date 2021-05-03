@@ -15,31 +15,29 @@ import java.util.List;
 
 @RestController
 public class HrController {
-
-	@Autowired
+    @Autowired
     private HrService service;
     
 	@PostMapping("/create")
     public int create(@RequestBody Employee employee){
         return service.createEmployee(employee);
     }
-	
-	@GetMapping("/get/{id}")
+    @GetMapping("/get/{id}")
     public Employee get(@PathVariable int id){
         return service.getEmployee(id);
     }
     
-	@GetMapping("/getAll")
+    @GetMapping("/getAll")
     public List getAll(){
         return service.getAllEmployees();
     }
     
-	@PutMapping("/update")
+    @PutMapping("/update")
     public void update(@RequestBody Employee employee){
         service.updateEmployee(employee);
     }
     
-	@DeleteMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable int id){
         service.deleteEmployee(id);
     }
