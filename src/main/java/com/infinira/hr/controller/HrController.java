@@ -11,11 +11,11 @@ public class HrController {
 
     private HrService service;
     
-    public int create(@RequestBody Employee employee){
+    public int create(Employee employee){
         return service.createEmployee(employee);
     }
 
-    public Employee get(@PathVariable int id){
+    public Employee get(int id){
         return service.getEmployee(id);
     }
     
@@ -23,11 +23,11 @@ public class HrController {
         return service.getAllEmployees();
     }
     
-    public void update(@RequestBody Employee employee){
+    public void update(Employee employee){
         service.updateEmployee(employee);
     }
     
-    public void delete(@PathVariable int id){
+    public void delete(int id){
         service.deleteEmployee(id);
     }
 
