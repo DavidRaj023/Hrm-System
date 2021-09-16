@@ -6,4 +6,4 @@ DAO pattern is used to separate low-level data accessing API or operations from 
 
 This project supports both localization and globalization, which is nothing but displaying a message content based on regions (country) and by its language. So that the user can view the message as by their language from any country. Finally build the application using the Gradle tool, to wrap the project as a zip file with required dependencies. This Zip file can be distributed to the user. 
 
-Also have a Junit test cases for testing this application.
+In this project we used rest api web services, also have a Junit test cases for testing rest end point.
