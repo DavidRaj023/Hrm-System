@@ -3,6 +3,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.text.MessageFormat;
 
+
 public class ResourceService {
 
     private volatile static ResourceService instance = null;
@@ -23,9 +24,9 @@ public class ResourceService {
 
     private ResourceService() {
         try {
-            resource = ResourceBundle.getBundle(PROPERTIES_FILE, Locale.getDefault());
+			resource = ResourceBundle.getBundle(PROPERTIES_FILE, Locale.getDefault());
         } catch (Throwable th) {
-            throw new RuntimeException(INVALID_FILE + PROPERTIES_FILE  , th);
+            throw new RuntimeException(th);
         }
     }
 
@@ -52,7 +53,6 @@ public class ResourceService {
         return message;
     }
 
-    private final String INVALID_FILE = "Can not Find this properties file: ";
     private final String INVALID_KEY = "Can not Find this key: ";
     private final String EMPTY_MESSAGE = "This key has an empty message: {0} ";
     private final String NULL_KEY = "Key can not be null or Empty";

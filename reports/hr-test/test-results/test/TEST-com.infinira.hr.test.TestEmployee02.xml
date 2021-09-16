@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.infinira.hr.test.TestEmployee02" tests="8" skipped="2" failures="0" errors="0" timestamp="2021-07-09T14:30:48" hostname="DAVID" time="8.86">
+  <properties/>
+  <testcase name="TestEmployee02, createEmployee()" classname="com.infinira.hr.test.TestEmployee02" time="6.227"/>
+  <testcase name="repetition 1 of 5" classname="com.infinira.hr.test.TestEmployee02" time="1.719"/>
+  <testcase name="repetition 2 of 5" classname="com.infinira.hr.test.TestEmployee02" time="0.264"/>
+  <testcase name="repetition 3 of 5" classname="com.infinira.hr.test.TestEmployee02" time="0.209"/>
+  <testcase name="repetition 4 of 5" classname="com.infinira.hr.test.TestEmployee02" time="0.186"/>
+  <testcase name="repetition 5 of 5" classname="com.infinira.hr.test.TestEmployee02" time="0.203"/>
+  <testcase name="TestEmployee02, updateEmployee()" classname="com.infinira.hr.test.TestEmployee02" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="TestEmployee02, deleteEmployee()" classname="com.infinira.hr.test.TestEmployee02" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[[get, Test02] Test Started
+20:00:54.306 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:54.306 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:54.309 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:54.309 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:54.309 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:54.309 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:54.309 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:54.309 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /Employee/2281 HTTP/1.1
+20:00:54.310 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "GET /Employee/2281 HTTP/1.1[\r][\n]"
+20:00:54.310 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:54.310 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:54.310 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:54.310 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> GET /Employee/2281 HTTP/1.1
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:54.311 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+20:00:54.316 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:54.317 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:54.319 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:54.319 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:54.319 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:54.320 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:54.321 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:54.321 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /Employee/2280 HTTP/1.1
+20:00:54.321 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "GET /Employee/2280 HTTP/1.1[\r][\n]"
+20:00:54.321 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:54.321 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:54.321 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:54.322 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:54.322 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:54.323 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:54.323 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> GET /Employee/2280 HTTP/1.1
+20:00:54.323 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:54.323 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:54.324 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:54.324 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:54.325 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+[get, Test02] Test Started
+20:00:56.275 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:56.275 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /Employee/2280 HTTP/1.1
+20:00:56.276 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "GET /Employee/2280 HTTP/1.1[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> GET /Employee/2280 HTTP/1.1
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:56.277 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:56.278 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+20:00:56.283 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Date: Fri, 09 Jul 2021 14:30:56 GMT[\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Content-Type: application/json
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Date: Fri, 09 Jul 2021 14:30:56 GMT
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+20:00:56.284 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Connection: keep-alive
+20:00:56.285 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+20:00:56.285 [ForkJoinPool-1-worker-3] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+20:00:56.286 [ForkJoinPool-1-worker-3] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+20:00:56.287 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "21e[\r][\n]"
+20:00:56.287 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "{"empId":2102,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"}"
+20:00:56.288 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.288 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+20:00:56.288 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.289 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@df9b0ae
+20:00:56.289 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 60000 MILLISECONDS
+[Test03] Test completed
+[get, Test02] Test Started
+20:00:56.478 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+20:00:56.479 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+20:00:56.479 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Date: Fri, 09 Jul 2021 14:30:56 GMT[\r][\n]"
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Content-Type: application/json
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Date: Fri, 09 Jul 2021 14:30:56 GMT
+20:00:56.480 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+20:00:56.481 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - << Connection: keep-alive
+20:00:56.481 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+20:00:56.481 [ForkJoinPool-1-worker-3] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+20:00:56.481 [ForkJoinPool-1-worker-3] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+20:00:56.483 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "21e[\r][\n]"
+20:00:56.483 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "{"empId":2184,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"}"
+20:00:56.483 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.483 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+20:00:56.483 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.483 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58a5909b
+20:00:56.484 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 60000 MILLISECONDS
+20:00:56.489 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:56.489 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /Employee/2280 HTTP/1.1
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "GET /Employee/2280 HTTP/1.1[\r][\n]"
+20:00:56.491 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> GET /Employee/2280 HTTP/1.1
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:56.492 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+20:00:56.497 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+20:00:56.497 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Content-Length: 0[\r][\n]"
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Date: Fri, 09 Jul 2021 14:30:56 GMT[\r][\n]"
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Content-Length: 0
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Date: Fri, 09 Jul 2021 14:30:56 GMT
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+20:00:56.498 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Connection: keep-alive
+20:00:56.499 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+[delete, Test01] Test completed
+[get, Test02] Test Started
+20:00:56.693 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:56.693 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:56.695 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:56.695 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:56.695 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /Employee/2280 HTTP/1.1
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "GET /Employee/2280 HTTP/1.1[\r][\n]"
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:56.696 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> GET /Employee/2280 HTTP/1.1
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:56.697 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+20:00:56.698 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+20:00:56.698 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+20:00:56.698 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+20:00:56.698 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Date: Fri, 09 Jul 2021 14:30:56 GMT[\r][\n]"
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Content-Type: application/json
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Date: Fri, 09 Jul 2021 14:30:56 GMT
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+20:00:56.699 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - << Connection: keep-alive
+20:00:56.700 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+20:00:56.700 [ForkJoinPool-1-worker-5] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+20:00:56.700 [ForkJoinPool-1-worker-5] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+20:00:56.702 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "2000[\r][\n]"
+20:00:56.702 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "[{"empId":2271,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2194,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2257,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2237,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2272,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2231,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2212,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2278,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2264,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2279,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2215,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2280,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2268,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2217,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2184,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Ta"
+20:00:56.703 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "mil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2248,"firstName":"David42","middleNam"
+20:00:56.704 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.704 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "c8c[\r][\n]"
+20:00:56.704 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "e":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2251,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2101,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2190,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2254,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"},{"empId":2102,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"}]"
+20:00:56.704 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.704 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+20:00:56.704 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.705 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4b984c2f
+20:00:56.705 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 60000 MILLISECONDS
+20:00:56.744 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12659<->127.0.0.1:8082 closed
+20:00:56.750 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12661<->127.0.0.1:8082 closed
+20:00:56.753 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12663<->127.0.0.1:8082 closed
+20:00:56.754 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12651<->127.0.0.1:8082 closed
+20:00:56.756 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12652<->127.0.0.1:8082 closed
+20:00:56.759 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12657<->127.0.0.1:8082 closed
+20:00:56.761 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:12655<->127.0.0.1:8082 closed
+[getAll, Test01] Test completed
+This method should be execute after all the test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

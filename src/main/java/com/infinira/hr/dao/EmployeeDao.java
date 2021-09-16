@@ -9,12 +9,9 @@ import com.infinira.hr.model.EmployeeStatus;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Date;
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
-import java.text.SimpleDateFormat;
-import java.io.InputStream;
 
 
 public class EmployeeDao {
@@ -34,13 +31,11 @@ public class EmployeeDao {
                generatedKey = rs.getInt(1);
                return generatedKey;
             } else {
-                //throw new HrException(ResourceService.getInstance().getMessage("HR-00006", employee.getFirstName()));
-                throw new HrException("no empid");
+                throw new HrException(ResourceService.getInstance().getMessage("HR-00006", employee.getFirstName()));
             }
             
         } catch (Throwable th) {
-            //throw new HrException(ResourceService.getInstance().getMessage("HR-00001", employee.getFirstName()), th);
-            throw new HrException("can't create", th);
+            throw new HrException(ResourceService.getInstance().getMessage("HR-00001", employee.getFirstName()), th);
         } finally {
             DatabaseService.getInstance().closeResources(rs, pstmt, conn);
         }
@@ -63,7 +58,7 @@ public class EmployeeDao {
             getValues(rs, employee);
             return employee;
         } catch (Throwable th) {
-            throw new HrException(ResourceService.getInstance().getMessage("HR-00002", employee.getFirstName()), th);
+            throw new HrException(ResourceService.getInstance().getMessage("HR-00002", employeeId), th);
         } finally {
             DatabaseService.getInstance().closeResources(rs, pstmt, conn);
         }
@@ -80,7 +75,9 @@ public class EmployeeDao {
             conn = DatabaseService.getInstance().getConnection();
             pstmt = conn.prepareStatement(UPDATE_QUERY + employee.getEmpId());
             setValues(pstmt,employee);
-            pstmt.executeUpdate();      
+            if (pstmt.executeUpdate() == 0) {
+            	throw new HrException(ResourceService.getInstance().getMessage("HR-00008", employee.getEmpId()));
+            }
         }
         catch (Throwable th) {
             throw new HrException(ResourceService.getInstance().getMessage("HR-00003", employee.getEmpId()), th);
@@ -100,7 +97,9 @@ public class EmployeeDao {
             DatabaseService db = DatabaseService.getInstance();
             conn = db.getConnection();
             pstmt = conn.prepareStatement(DELETE_QUERY+ employeeId);
-            pstmt.executeUpdate();
+            if (pstmt.executeUpdate() == 0) {
+            	throw new HrException(ResourceService.getInstance().getMessage("HR-00008", employeeId));
+            }
         } catch (Throwable th) {
             throw new HrException(ResourceService.getInstance().getMessage("HR-00004", employeeId), th);
         } finally {
@@ -160,6 +159,7 @@ public class EmployeeDao {
     }
 
     private Employee getValues(ResultSet rs, Employee employee) throws Exception {
+    	employee.setEmpId(rs.getInt("emp_id"));
         employee.setFirstName(rs.getString("first_name"));
         employee.setMiddleName(rs.getString("middle_name"));
         employee.setLastName(rs.getString("last_name"));

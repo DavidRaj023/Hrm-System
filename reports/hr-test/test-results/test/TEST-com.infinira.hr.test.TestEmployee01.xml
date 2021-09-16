@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.infinira.hr.test.TestEmployee01" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-07-09T14:30:48" hostname="DAVID" time="8.777">
+  <properties/>
+  <testcase name="Create" classname="com.infinira.hr.test.TestEmployee01" time="6.229"/>
+  <testcase name="Get" classname="com.infinira.hr.test.TestEmployee01" time="1.75"/>
+  <testcase name="Update" classname="com.infinira.hr.test.TestEmployee01" time="0.335"/>
+  <testcase name="Delete" classname="com.infinira.hr.test.TestEmployee01" time="0.172"/>
+  <testcase name="GetAll" classname="com.infinira.hr.test.TestEmployee01" time="0.286"/>
+  <system-out><![CDATA[This method should be executed before all the test
+This method should be executed before all the test
+This method should be executed before all the test
+[get, Test01] Test Started
+[update, Test01] Test Started
+[delete, Test01] Test Started
+20:00:56.336 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:56.336 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:56.337 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:56.337 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:56.338 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:56.338 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:56.338 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:56.338 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /Employee/2184 HTTP/1.1
+20:00:56.338 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "GET /Employee/2184 HTTP/1.1[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - >> GET /Employee/2184 HTTP/1.1
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:56.339 [ForkJoinPool-1-worker-3] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+20:00:56.350 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8082
+20:00:56.350 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8082
+20:00:56.352 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: DELETE /Employee/2281 HTTP/1.1
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "DELETE /Employee/2281 HTTP/1.1[\r][\n]"
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Host: localhost:8082[\r][\n]"
+20:00:56.353 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)[\r][\n]"
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> DELETE /Employee/2281 HTTP/1.1
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Accept: */*
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Host: localhost:8082
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.9)
+20:00:56.354 [ForkJoinPool-1-worker-5] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+20:00:56.445 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "Date: Fri, 09 Jul 2021 14:30:56 GMT[\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.446 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - << Content-Type: application/json
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - << Date: Fri, 09 Jul 2021 14:30:56 GMT
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.headers - << Connection: keep-alive
+20:00:56.447 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+20:00:56.448 [ForkJoinPool-1-worker-7] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+20:00:56.448 [ForkJoinPool-1-worker-7] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "21e[\r][\n]"
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "{"empId":2280,"firstName":"David42","middleName":"E","lastName":"Raj","fatherName":"Edwin","dob":"2000-12-31","gender":"m","maritalStatus":"single","uid":"8978675645","email":"benjamindavid023@gmail","phone":"9578821821","bloodGroup":"b+","doj":"2001-10-02","addressLine1":"1/10-4 Periyar Street                             ","addressLine2":"Malaiyappa Nagar                                  ","city":"Trichy","state":"Tamil Nadu","postalCode":"620010","country":"India","title":"Trainee","resume":null,"photo":null,"employeeStatus":"active"}"
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.wire -  << "[\r][\n]"
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@79533cec
+20:00:56.449 [ForkJoinPool-1-worker-7] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 60000 MILLISECONDS
+[get, Test02] Test completed
+[getAll, Test01] Test Started
+[Test03] Test completed
+This method should be execute after all the test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

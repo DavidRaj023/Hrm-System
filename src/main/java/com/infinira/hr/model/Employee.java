@@ -27,7 +27,6 @@ public class Employee {
     private byte[] resume;
     private byte[] photo;
     private EmployeeStatus employeeStatus;
-	private String homeNumber;
 
     
     public int getEmpId() {
@@ -70,7 +69,7 @@ public class Employee {
     }
 
     public void setFatherName(String fatherName) {
-        validate(FIRST_NAME, fatherName, FATHER_NAME_LENGTH);
+        validate(FATHER_NAME, fatherName, FATHER_NAME_LENGTH);
         this.fatherName = fatherName;
     }
 
@@ -156,7 +155,7 @@ public class Employee {
     }
 
     public void setAddressLine2(String addressLine2) {
-        validate(ADDRESS_LINE1, addressLine2, ADDRESS_LINE1_LENGTH);
+        validate(ADDRESS_LINE2, addressLine2, ADDRESS_LINE1_LENGTH);
         this.addressLine2 = addressLine2;
     }
 
@@ -266,7 +265,6 @@ public class Employee {
     private final int PHONE_LENGTH = 15;
     private final int BLOOD_GROUP_LENGTH = 4;
     private final int ADDRESS_LINE1_LENGTH = 50;
-    private final int ADDRESS_LINE2_LENGTH = 50;
     private final int CITY_LENGTH = 50;
     private final int STATE_LENGTH = 35;
     private final int POSTAL_CODE_LENGTH = 10;
